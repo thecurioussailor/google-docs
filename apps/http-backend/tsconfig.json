@@ -1,0 +1,11 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*.ts", // Adjust this to include the path where the augmentation file is located
+    "types/**/*.d.ts" //
+  ]
+}
