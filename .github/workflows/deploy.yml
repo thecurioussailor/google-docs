@@ -16,6 +16,6 @@ jobs:
         - name: Build docker image
           run: docker build -f ./docker/docs-app/Dockerfile -t 100xdevs/gdocs-fe:${{ github.sha }} .
         - name: Login to dockerhub
-          run: docker login -u 100xdevs -p ${{ secrets.DOCKERHUB_PASSWORD }}
+          run: docker login -u ashutoshsagar -p ${{ secrets.DOCKERHUB_PASSWORD }}
         - name: Push docker image
           run: docker push 100xdevs/gdocs-fe:${{ github.sha }}
