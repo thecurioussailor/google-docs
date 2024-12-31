@@ -18,4 +18,4 @@ jobs:
         - name: Login to dockerhub
           run: docker login -u ashutoshsagar -p ${{ secrets.DOCKERHUB_PASSWORD }}
         - name: Push docker image
-          run: docker push 100xdevs/gdocs-fe:${{ github.sha }}
+          run: docker push ashutoshsagar/gdocs-fe:${{ github.sha }}
